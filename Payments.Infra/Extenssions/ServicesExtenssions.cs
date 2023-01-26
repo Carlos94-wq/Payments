@@ -60,6 +60,9 @@ namespace Payments.Infra.Extenssions
             services.AddTransient<IAuthRepository, AuthRepository>();
             services.AddTransient<IAuthService, AuthServcie>();
 
+            services.AddTransient<ICatalogRespository, CatalogRespository>();
+            services.AddTransient<ICatalogService, CatalogService>();
+
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             return services;
