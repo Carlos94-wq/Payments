@@ -12,9 +12,10 @@ using System.Threading.Tasks;
 
 namespace Payments.Api.Controllers
 {
-    [Authorize]
+
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class paymentController : ControllerBase
     {
 
