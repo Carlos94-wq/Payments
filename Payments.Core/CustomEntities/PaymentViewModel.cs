@@ -10,5 +10,6 @@ namespace Payments.Core.CustomEntities
         public string SupplierName{ get; set; }
         public string Email{ get; set; }
         public string Amount{ get; set; }
+        public string Currency{ get; set; }
     }
 }

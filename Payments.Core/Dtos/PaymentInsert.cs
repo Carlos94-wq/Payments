@@ -10,9 +10,9 @@ namespace Payments.Core.Dtos
 
         public int UserId { get; set; }
 
-        public decimal? Amount { get; set; }
+        public decimal Amount { get; set; }
 
-        public int? CurrencyId { get; set; }
+        public int CurrencyId { get; set; }
 
         public string Comments { get; set; }
 

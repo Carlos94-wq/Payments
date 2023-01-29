@@ -27,7 +27,7 @@ namespace Payments.Infra.Repositories
                 var parameters = new
                 {
                     Accion = 4,
-                    SupplierId = paymentId
+                    PaymentId = paymentId
                 };
 
                 var isDeleted = await conn.ExecuteAsync("spPayments", parameters, commandType: CommandType.StoredProcedure);
