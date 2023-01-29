@@ -87,11 +87,12 @@ namespace Payments.Api.Controllers
             }
         }
 
-        [HttpPut]
-        public async Task<IActionResult> PutPayment([FromBody] PaymentUpdate payment)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutPayment( int id, [FromBody] PaymentUpdate payment)
         {
             try
             {
+                payment.PaymentId = id;
                 var domain = this.mapper.Map<PAYMENT>(payment);
 
                 var paymentUpdated = await this.service.updatePaymnat(domain);

@@ -98,14 +98,10 @@ namespace Payments.Infra.Repositories
                     UserId = payments.UserId,
                     Amount = payments.Amount,
                     CurrencyId = payments.CurrencyId,
-                    Comments = payments.Comments,
-                    PaymentStatus = payments.PaymentStatus,
-                    RecordingDate = payments.RecordingDate,
-                    UpdatingDate = payments.UpdatingDate,
-                    DeleteingDate = payments.DeleteingDate
+                    Comments = payments.Comments
                 };
 
-                var isUpdated = await conn.ExecuteScalarAsync("spPayments", parametrer, commandType: CommandType.StoredProcedure);
+                var isUpdated = await conn.ExecuteAsync("spPayments", parametrer, commandType: CommandType.StoredProcedure);
                 return Convert.ToInt32(isUpdated);
             }
         }
