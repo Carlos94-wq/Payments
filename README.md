@@ -292,7 +292,7 @@ BEGIN
 		UPDATE PAYMENT
 		SET PaymentStatus = 0,
 			DeleteingDate = GETDATE()
-		WHERE PaymentId = 60
+		WHERE PaymentId = @PaymentId
 	END			
 
 	IF @Accion = 5
