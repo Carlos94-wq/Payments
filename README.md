@@ -5,6 +5,7 @@ Microserice
 ## Copy the database scripts below
 
 [Scripts.txt](https://github.com/Carlos94-wq/Payments/files/10529277/Scripts.txt)
+[Records.txt](https://github.com/Carlos94-wq/Payments/files/10529278/Records.txt)
 
 									
 # Switch the connection strings in appSettings file
